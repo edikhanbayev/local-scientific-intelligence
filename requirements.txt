@@ -1,0 +1,11 @@
+fastapi[standard]
+pymupdf
+chromadb
+sentence-transformers
+transformers
+scikit-learn
+numpy
+pandas
+requests
+pytest
+httpx

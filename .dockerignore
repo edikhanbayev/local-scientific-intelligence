@@ -1,0 +1,12 @@
+.venv
+.git
+__pycache__
+.pytest_cache
+.idea
+*.pyc
+test2.py
+test3.py
+test4.py
+test5.py
+test_ollama.py
+tests.py

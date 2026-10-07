@@ -1,4 +1,23 @@
-FROM ubuntu:latest
-LABEL authors="Gulzhan"
+FROM python:3.11-slim
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install --upgrade pip
+
+# CPU-only PyTorch
+RUN pip install --no-cache-dir \
+    torch \
+    --index-url https://download.pytorch.org/whl/cpu
+
+RUN pip install --no-cache-dir \
+    -r requirements.txt
+
+COPY app ./app
+COPY scripts ./scripts
+COPY evaluation ./evaluation
+
+EXPOSE 8000
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

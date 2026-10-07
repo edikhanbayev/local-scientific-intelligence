@@ -1,0 +1,32 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: local-ollama
+
+    ports:
+      - "11434:11434"
+
+    volumes:
+      - ollama_data:/root/.ollama
+
+  api:
+    build: .
+
+    container_name: scientific-api
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      OLLAMA_URL: http://ollama:11434
+      OLLAMA_MODEL: qwen3:0.6b
+      EMBEDDING_MODEL: cointegrated/rubert-tiny2
+
+    volumes:
+      - ./data:/app/data
+
+    depends_on:
+      - ollama
+
+volumes:
+  ollama_data:

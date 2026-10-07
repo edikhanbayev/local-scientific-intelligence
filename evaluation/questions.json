@@ -1,0 +1,92 @@
+[
+    {
+        "question":
+            "Как гибридная система поиска объединяет семантический и лексический поиск?",
+        "expected_source":
+            "ai_patent_2024.pdf"
+    },
+    {
+        "question":
+            "Какое значение параметра k используется при Reciprocal Rank Fusion в патентной системе?",
+        "expected_source":
+            "ai_patent_2024.pdf"
+    },
+    {
+        "question":
+            "Какие этапы включает базовый RAG-конвейер для обработки документов?",
+        "expected_source":
+            "ai_report_2024.pdf"
+    },
+    {
+        "question":
+            "Какие метрики рекомендуется использовать для оценки качества retrieval в RAG-системе?",
+        "expected_source":
+            "ai_report_2024.pdf"
+    },
+    {
+        "question":
+            "Какие основные задачи компьютерного зрения рассматриваются в обзоре 2026 года?",
+        "expected_source":
+            "computer_vision_2026.pdf"
+    },
+    {
+        "question":
+            "Как INT8-квантование влияет на задержку и F1 модели компьютерного зрения?",
+        "expected_source":
+            "computer_vision_2026.pdf"
+    },
+    {
+        "question":
+            "Какие технологии долговременного хранения энергии рассматриваются в 2024 году?",
+        "expected_source":
+            "energy_storage_2024.pdf"
+    },
+    {
+        "question":
+            "Как повышенная температура влияет на срок службы LFP-системы?",
+        "expected_source":
+            "energy_storage_2024.pdf"
+    },
+    {
+        "question":
+            "Как изменилась стоимость типовой LFP BESS в 2025 году по сравнению с 2024 годом?",
+        "expected_source":
+            "energy_storage_2025.pdf"
+    },
+    {
+        "question":
+            "Какие факторы влияют на приведённую стоимость хранения энергии LCOS?",
+        "expected_source":
+            "energy_storage_2025.pdf"
+    },
+    {
+        "question":
+            "Какие уровни входят в референсную архитектуру Industrial AI?",
+        "expected_source":
+            "industrial_ai_2026.pdf"
+    },
+    {
+        "question":
+            "Какие обязательные метаданные рекомендуется хранить для Industrial RAG?",
+        "expected_source":
+            "industrial_ai_2026.pdf"
+    },
+    {
+        "question":
+            "За сколько часов до подтверждённого отказа модель аномалий предупреждала о проблеме подшипника?",
+        "expected_source":
+            "industrial_ai_2026.pdf"
+    },
+    {
+        "question":
+            "Какие типы промышленных роботов рассматриваются в отчёте по робототехнике 2025 года?",
+        "expected_source":
+            "robotics_report_2025.pdf"
+    },
+    {
+        "question":
+            "На сколько процентов пилот предиктивного обслуживания сократил незапланированный простой роботизированных приводов?",
+        "expected_source":
+            "robotics_report_2025.pdf"
+    }
+]
